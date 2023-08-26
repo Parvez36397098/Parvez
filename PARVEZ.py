@@ -232,7 +232,7 @@ class main_crack():
     def methodA(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r \033[1;34mFinding \033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
+            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m{loop}\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -303,7 +303,7 @@ class main_crack():
     def methodC(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r \033[1;34mFinding \033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
+            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m{loop}\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -375,7 +375,7 @@ class main_crack():
     def methodB(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r \033[1;34mFinding \033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
+            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m{loop}\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
