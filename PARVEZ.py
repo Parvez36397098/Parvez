@@ -419,7 +419,7 @@ class main_crack():
             clear()
             print('\033[92;1m★ \033[1;37mPut limit between 1 \033[92;1m★\033[1;37m 30')
             linex()
-            sl = int(input('\033[92;1m★ \033[1;37mHow many passwords do you want to add \033[91;1m?\033[92;1m '))
+            sl = int(input('\033[92;1m★ \033[1;37mPasswordLimit \033[91;1m?\033[92;1m '))
             os.system("clear")
             print(logo)
             print(f'\033[92;1m★ \033[1;37mEXAMPLE :\033[92;1mfirst last,first123,First@123…\033[1;37mEtc')
