@@ -62,7 +62,7 @@ filter = []
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/355.0.0.37.106;FBPN/com.facebook.katana;FBLC/in_ID;FBBV/13543083;FBCR/Telenor;FBMF/OPPO;FBBD/OPPO;FBDV/CPH2325;FBSV/11;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=720,height=1520};FB_FW/1;]'
+    END = 'Mozilla/5.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/367.0.0.7.52;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -232,7 +232,7 @@ class main_crack():
     def methodA(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m{loop}\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
+            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m[{loop}]\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -303,7 +303,7 @@ class main_crack():
     def methodC(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m{loop}\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
+            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m[{loop}]\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -375,7 +375,7 @@ class main_crack():
     def methodB(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m{loop}\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
+            sys.stdout.write(f"\r \033[1;34mFinding \x1b[1;94m[{loop}]\033[1;32mOK \033[1;37m~\033[1;32m {len(oks)} \033[1;91mCP \033[1;37m~\033[1;91m {len(cps)}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -467,7 +467,7 @@ class main_crack():
             #print(f'\033[92;1m~ \033[1;37m Cracking Started')
             #linex()
             print(f'\033[92;1m~ \033[1;37m Total IDs :\033[92;1m %s ' % len(self.id))
-            print(f"\r\033[92;1m~ \33[1;97m Every 5 Min Turn Airplane\x1b[91;1m > On/Off\33[1;37m")
+            print(f"\r\033[92;1m~ \33[1;97m Every 5 Min Turn on airplane mode\x1b[91;1m > On/Off\33[1;37m")
             linex()
             with RPssb(max_workers=30) as ssbworld:
                 for zsb in self.id:
